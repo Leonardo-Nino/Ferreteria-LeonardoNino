@@ -71,7 +71,7 @@ ul li:hover ul {
 
 .contenedorBody {
   display: grid;
-  grid-template-rows: 80px 100vh  1fr;    /*tengo muchos problemas con las medidas*/
+  grid-template-rows: 80px 70vh  0.1fr;    /*tengo muchos problemas con las medidas*/
   grid-template-columns: 1fr;
   grid-template-areas: "header header header"
                         "main main main"
@@ -81,10 +81,34 @@ ul li:hover ul {
               
   background-image: rgb(238,174,202);
   background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background-size: 500% 200%;
+  animation-name: animacion_fondo ;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes animacion_fondo {
+   0% {
+
+   }
+   25% {
+    background-position: 0% 50% ;
+
+   }
+   50%{ background-position: 100% 50% ;
+
+   }
+   100%{ background-position: 0% 50% ;
+
+   }
+  
 }
 
 
-/* Aqui empieza Main del Index*/
+
+
+/* Aqui empieza Main del Index----------------------------*/
 
 
 
@@ -98,15 +122,15 @@ color: black;
 grid-area: main;
 display: flex;
 flex-wrap: wrap;
-flex-direction: column;
+flex-direction:column;
 justify-content: center;
 text-align: center;
 align-items: center;
 
 
 }
-.buttonIndex{
-   border-color: #aaca1d;
+.buttonIndex{ 
+   border-color:  #aaca1d;
   font-family: "roboto";
   text-transform: uppercase;
   width: 140px;
@@ -119,6 +143,7 @@ align-items: center;
 .buttonIndex:hover {
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  
 }
 
 main button a {
@@ -127,13 +152,14 @@ main button a {
 }
 
 .contenedorLogo{
-  width: 50%;
+  width: 100%;
   height: 100px;
   
 }
 
 
 .logoMain{
+  width: 100%;
   text-align: center;
   font-family: "logo";
   font-size: 4em;
@@ -142,19 +168,25 @@ main button a {
   color: rgb(1, 60, 68);
     
 }
+.descripcionMain{
+  font-family: "roboto";
+  
+}
 
 
 
 
 
-/*FOOTER DE TODAS LAS PAGIMAS*/
+/*FOOTER DE TODAS LAS PAGIMAS---------------------------*/
 
 
 footer{ 
-  width: 100%; 
+  width: 100%;
+   height: fit-content;
   padding: 10px 10px 100px 10px ;
   font-family: "roboto";
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   justify-items: center;
   flex-wrap: wrap;
@@ -175,6 +207,7 @@ footer{
 
 }
 
+
 /*------------------------ MEDIA QUERRY PARA EL FOOTER-------------------------*/
 
 @media only screen and (max-width: 850px){
@@ -185,7 +218,13 @@ footer{
   
 }
   
+@media only screen and (max-width: 1000px){
 
+  .footerParrafo{
+    display:none;
+  }
+
+}
 
 
 
@@ -247,7 +286,7 @@ footer{
 
 
 
-/* ACA EMPIEZA MAIN DEL ARCHIVO CATALOGO */
+/* ACA EMPIEZA MAIN DEL ARCHIVO CATALOGO-------------------------------------- */
 
 .mainCatagolo{
   padding: 10px;
@@ -268,7 +307,7 @@ footer{
   justify-items: center;
   flex-wrap: wrap;
   height: 50vh;
-  width: 100%;
+  width: 100vw;
  
 }
 
