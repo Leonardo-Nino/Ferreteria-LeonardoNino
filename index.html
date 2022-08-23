@@ -4,56 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-<!--FaviCon choto por ahora-->
+       <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      <!-- bootstrap Iconos -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <!--FaviCon -->
     <link rel="Icon" type="image" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
     <title> Ferrecord</title>
 </head>
-<body class="contenedorBody" > 
+<body  > 
 <!--desde aca Logo mas Nav --> 
-    <header class ="headerIndex" >
-        <a href="./index.html"><p class="logoHeader"> ferrecord </p></a>
-        <nav>
-            <ul>    
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/Catalogo.html">Catalogo</a></li>
-                <li><a href="./pages/Nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/TipsConstruccion.html">Tips de Construccion</a></li>
-                <li><a href="./pages/Contacto.html">Contafcto</a></li>
-            </ul>        
-        </nav>
+    <header class="container-fluid bg-color">
+        <div class ="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#"><p class="logoHeader"> ferrecord </p></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/Catalogo.html">Catalogo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./pages/Nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./pages/TipsConstruccion.html">Tips Construccion</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link"  href="./pages/Contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
     </header>
 
-    <main class = "mainIndex">
-        
+    <main class>
+
+      <section>
             <h1 class="logoMain"> ferrecord </h1>
             <p class="descripcionMain">Asesoraminto y presupuesto sin compromiso</p>
-            <button name="boton contacto" class="buttonIndex" ><a href="./pages/Contacto.html">Contacto</a></button>
             
+      </section> 
+      <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner ">
+            <div class="carousel-item active">
+              <div class="Carrusel-cards d-flex justify-content-around">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="PRIMERA PROMO">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/Herramientas.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="Carrusel-cards d-flex justify-content-around">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="SEGUNDO">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/electricidad.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="Carrusel-cards d-flex justify-content-around">
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/cerrajeria.jpg" class="card-img-top" alt="CERRAJERIA">
+                  <div class="card-body">
+                    <h5 class="card-title">LLAVES</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span> 
+          </button>
+        </div> 
+      </section>
     </main>
 
-<!--Footer desde aca-->
-    <footer >
-        <div  class="footerBoxes">
-            <img src="./images/email.png" alt="icono mail" class="footerIcono"> 
-            <p>tunegocio@gmail.com</p>
-        </div>
 
-        <div  class="footerBoxes">
-            <img src="./images/call.png" alt="icono tel" class="footerIcono">
+    
+
+<!--Footer desde aca-->
+    <footer   class="container-fluid mt-5">
+      <div  class="row text-center">
+        <div class="col-md-3 border-end border-bottom" >
+            <a href= "#" ><i class="bi bi-envelope-fill fs-1"></i></a>
+            <p>ferrecord@contacto.com</p>
+        </div>
+    
+        <div  class="col-md-3 border-end border-bottom">
+          <a href= "#"><i class="bi bi-telephone-fill fs-1 "></i></a>
             <p>45881199</p>
         </div>
-        
-        <div  class="footerBoxes"> 
-            <img src="./images/adress.png"alt="icono direccion" class="footerIcono">
-            <p>Av. Colom 14589, Cordoba, Argentina</p>
+       
+        <div  class="col-md-3 border-end border-bottom"> 
+          <a href= "#"><i class="bi bi-geo-alt-fill fs-1"></i></a>
+          <p>Av. Colon 14589 <br>
+            Cordoba, Argentina</p>
+        </div>
 
+        <div  class= "col-md-3 border-bottom"> 
+          <a href= "#"><i class="bi bi-clock-fill fs-1 "></i></a>   
+          <p>Horarios</p>    
         </div>
-        <div  class= "googleMap">       
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.044519150309!2d24.925000515601248!3d60.16344185090642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a4ab188e101%3A0x1da95eb6dbabd510!2sKalevankatu%2050%2C%2000180%20Helsinki!5e0!3m2!1ses!2sfi!4v1658487299799!5m2!1ses!2sfi"
-            width="300" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+      </div>
     </footer>
  <!--hasta aqui footer-->
+ <!-- Script Bootstrap -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </body>
 </html>

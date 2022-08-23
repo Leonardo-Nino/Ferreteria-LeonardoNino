@@ -25,112 +25,10 @@
   
 }
 
-header {
-  background-color: rgb(191, 203, 224);
-  position: sticky;
-  width: 100%;
-  top: 0;
-  height: 80px;
-  border-bottom: black solid 2px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  grid-area: header;
-}
-
-header a {
-  text-decoration: none;
-}
-
-nav ul{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  list-style: none;
-  margin-left: 10px;
-  padding: 10px;
- 
-}
-nav ul li {  
-  display: inline-block;
-  position: relative; 
-  margin-bottom: 15px;
-  margin-left:10px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: rgb(22, 3, 3);
-}
-
-
-ul li:hover ul {
- display:block;
-} 
-
-
-/*------------------------------- Aqui Empieza Body de INDEX , NOSOTROS Y CATALOGO "GRID",-----------------------!*/
-
-
-.contenedorBody {
-  display: grid;
-  grid-template-rows: 80px 100vh  1fr;    /*tengo muchos problemas con las medidas*/
-  grid-template-columns: 1fr;
-  grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";   
-                   
-  flex-wrap: wrap;     
-              
-  
-}
-
-
-/* Aqui empieza Main del Index*/
 
 
 
-
-.mainIndex{
-background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
-background-color: transparent;
-background-size: cover;
-padding: 10px;
-font-family:'Arial Narrow Bold', sans-serif;
-font-size: medium;
-text-align: center;
-color: black;
-grid-area: main;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
-justify-content: center;
-text-align: center;
-align-items: center;
-
-
-}
-.buttonIndex{
-  border-color: #3498db;
-  color: #fff;
-  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-  -webkit-transition: all 150ms ease-in-out;
-  transition: all 150ms ease-in-out;
-  font-size: large;
-  text-transform: uppercase;
-  width: 140px;
-  height: 40px;
-  
-  margin-top: 30px;
-
-}
-
-.buttonIndex:hover {
-  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-}
-
-main button a {
-  text-decoration: none;
-  color: black;
-}
+/* HEADER NAV LOGO TODAS LAS PAGINAS--------------------------------- */
 
 
 .logoMain{
@@ -143,53 +41,38 @@ main button a {
     
 }
 
-
-
-
-
-/*FOOTER DE TODAS LAS PAGIMAS*/
-
-
-footer{
-  background-color:rgb(191, 203, 224); 
-  width: 100%; 
-  padding: 10px 10px 100px 10px ;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  flex-wrap: wrap;
-  height: 80px;
-  grid-area: footer;
-  
- 
-  
+.bg-color{
+ background-color: #E6E6E6
 }
 
-.footerIcono{
-  max-width: 40px ;
-  margin-left:20%;
-  
-  
+a{
+  transition: all 1 ease-in-out;
+   
 }
-.footerBoxes{
- 
-  align-self:center;
+
+header p:hover, a:hover ,.btn-primary:hover{
+  transform: scale(0.8);
+  
 
 }
 
-/*------------------------ MEDIA QUERRY PARA EL FOOTER-------------------------*/
 
-@media only screen and (max-width: 850px){
-
-  .googleMap {
-    display:none;
-  }      
   
+
+
+/*FOOTER DE TODAS LAS PAGINAS*-----------------------------------------*/
+
+
+footer div div a{
+  color:#7BB0D2;
+   
+
 }
-  
 
+footer div div a:hover{
 
+  color: greenyellow;
+}
 
 
 /*Aca comienza main del archivo "Nosotros" */
@@ -329,71 +212,31 @@ main section a {
 
 }
 
-/* ACA EMPIEZA MAIN DEL ARCHICO CONTACTO */
+/* ACA EMPIEZA MAIN DEL ARCHICO CONTACTO -----------------------------------*/
 
+.btn-primary{
 
-
-form {
-	width:500px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:lightskyblue;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #DADADA;
+  color:black;
+  border-color: #94bfd6;
 }
 
-fieldset{
-  width:200px;
-	padding:10px;
-	border-radius:10px;
-  margin:auto;
+.btn-primary:hover{
+  background-color:  #4c7c96;
+  transition: all 1 ease-in-out;
 }
 
-form label{
-	width:100px;
-	font-weight:bold;
-	display:inline-block;
-}
-
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid #d12727;
-	border-radius:3px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-	resize: none;
-	display:block;
-}
-
-form input[type="text"],form input[type="email"], form input[type="number"] {
-
-	width:180px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:8px 0;
-	display:inline-block;
-}
-
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
-
-form input[type="submit"]:hover{
-	cursor:pointer;
-}
 .mainContacto{
-  background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
+  background-color: #DADADA;
+
 }
+@media (max-width: 761px) {
+
+.margenTop{
+  margin: 2rem;
+}
+ }
+
 
 /* ACA COMIENZA MAIN DEL ARCHIVO "TIPS CONSTRUCCION */
 
