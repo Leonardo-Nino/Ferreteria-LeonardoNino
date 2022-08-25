@@ -2,8 +2,7 @@
 @font-face {
   font-family: logo;
   src: url(../assets/logo.TTF);
-   /*  Esta fuente para el logo no esta en google font y la descargue desde otro lado  y no se como agregarla a 
-   html como un link*/
+  
 } 
 
 *{
@@ -13,9 +12,14 @@
 }
 
 
+body{
 
+  font-family: "roboto";
 
-/* Aqui empieza Header, Nav y logo para TODAS las paginas*/ 
+}
+  
+
+/* Aqui empieza Header, Nav y logo para TODAS las paginas-------------------*/ 
 
 .logoHeader {
   font-family: "logo";
@@ -26,6 +30,7 @@
   
 }
 
+<<<<<<< HEAD
 header {
   position: sticky;
   width: 100%;
@@ -46,26 +51,49 @@ nav ul{
   list-style: none;
   margin-left: 10px;
   padding: 10px;
+=======
+
+.bg-color{
+  background-color: #3D7FAA
+ }
+>>>>>>> Bootstrap
  
+ a{
+   transition: all 1 ease-in-out;
+    
+ }
+ 
+ header p:hover, a:hover ,.btn-primary:hover{
+   transform: scale(0.8);
+   
+ 
+ }
+ 
+
+
+
+
+/*FOOTER DE TODAS LAS PAGINAS*--------------------------------------------*/
+
+.background-footer{
+
+background-color: #C0C0C0;
 }
-nav ul li {  
-  display: inline-block;
-  position: relative; 
-  margin-bottom: 15px;
-  margin-left:10px;
+
+footer div div a{
+  color:#7BB0D2;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: rgb(22, 3, 3);
+footer div div a:hover{
+
+  color: greenyellow;
 }
 
 
-ul li:hover ul {
- display:block;
-} 
+/* ACA INDEX--------------------------------------------------------------*/
 
 
+<<<<<<< HEAD
 /*------------------------------- Aqui Empieza Body de INDEX , NOSOTROS Y CATALOGO "GRID",-----------------------!*/
 
 
@@ -161,6 +189,18 @@ main button a {
 .logoMain{
   width: 100%;
   text-align: center;
+=======
+.contenedor-main{
+  height: 70vh;
+  background-image: rgb(61,127,170);
+  background-image: linear-gradient(152deg, rgba(61,127,170,1) 1%, rgba(86,153,196,1) 30%, rgba(123,176,210,1) 38%, rgba(192,192,192,1) 71%, rgba(218,218,218,1) 83%);
+  
+
+}
+
+.logoMain{
+ 
+>>>>>>> Bootstrap
   font-family: "logo";
   font-size: 4em;
   text-decoration-line: underline;
@@ -173,7 +213,9 @@ main button a {
   
 }
 
+@media only screen and (max-width: 550px){
 
+<<<<<<< HEAD
 
 
 
@@ -225,6 +267,31 @@ footer{
   }
 
 }
+=======
+  .Carrusel-cards{
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  
+}
+  
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+}
+
+ .bg-carrusel{
+ background-color: #DADADA;
+
+
+
+
+
+
+
+ }
+>>>>>>> Bootstrap
 
 
 
@@ -365,71 +432,31 @@ main section a {
 
 }
 
-/* ACA EMPIEZA MAIN DEL ARCHICO CONTACTO */
+/* ACA EMPIEZA MAIN DEL ARCHICO CONTACTO -----------------------------------*/
 
+.btn-primary{
 
-
-form {
-	width:500px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
-	background-color:lightskyblue;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #DADADA;
+  color:black;
+  border-color: #94bfd6;
 }
 
-fieldset{
-  width:200px;
-	padding:10px;
-	border-radius:10px;
-  margin:auto;
+.btn-primary:hover{
+  background-color:  #4c7c96;
+  transition: all 1 ease-in-out;
 }
 
-form label{
-	width:100px;
-	font-weight:bold;
-	display:inline-block;
-}
-
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid #d12727;
-	border-radius:3px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-	resize: none;
-	display:block;
-}
-
-form input[type="text"],form input[type="email"], form input[type="number"] {
-
-	width:180px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
-	background-color:#f6f6f6;
-	margin:8px 0;
-	display:inline-block;
-}
-
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-	background-color:#000;
-} 
-
-form input[type="submit"]:hover{
-	cursor:pointer;
-}
 .mainContacto{
-  background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
+  background-color: #DADADA;
+
 }
+@media (max-width: 761px) {
+
+.margenTop{
+  margin: 2rem;
+}
+ }
+
 
 /* ACA COMIENZA MAIN DEL ARCHIVO "TIPS CONSTRUCCION */
 
