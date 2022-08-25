@@ -1,8 +1,7 @@
 @font-face {
   font-family: logo;
   src: url(../assets/logo.TTF);
-   /*  Esta fuente para el logo no esta en google font y la descargue desde otro lado  y no se como agregarla a 
-   html como un link*/
+  
 } 
 
 *{
@@ -12,9 +11,14 @@
 }
 
 
+body{
 
+  font-family: "roboto";
 
-/* Aqui empieza Header, Nav y logo para TODAS las paginas*/ 
+}
+  
+
+/* Aqui empieza Header, Nav y logo para TODAS las paginas-------------------*/ 
 
 .logoHeader {
   font-family: "logo";
@@ -26,13 +30,55 @@
 }
 
 
+.bg-color{
+  background-color: #3D7FAA
+ }
+ 
+ a{
+   transition: all 1 ease-in-out;
+    
+ }
+ 
+ header p:hover, a:hover ,.btn-primary:hover{
+   transform: scale(0.8);
+   
+ 
+ }
+ 
 
 
-/* HEADER NAV LOGO TODAS LAS PAGINAS--------------------------------- */
 
+
+/*FOOTER DE TODAS LAS PAGINAS*--------------------------------------------*/
+
+.background-footer{
+
+background-color: #C0C0C0;
+}
+
+footer div div a{
+  color:#7BB0D2;
+}
+
+footer div div a:hover{
+
+  color: greenyellow;
+}
+
+
+/* ACA INDEX--------------------------------------------------------------*/
+
+
+.contenedor-main{
+  height: 70vh;
+  background-image: rgb(61,127,170);
+  background-image: linear-gradient(152deg, rgba(61,127,170,1) 1%, rgba(86,153,196,1) 30%, rgba(123,176,210,1) 38%, rgba(192,192,192,1) 71%, rgba(218,218,218,1) 83%);
+  
+
+}
 
 .logoMain{
-  text-align: center;
+ 
   font-family: "logo";
   font-size: 4em;
   text-decoration-line: underline;
@@ -41,38 +87,32 @@
     
 }
 
-.bg-color{
- background-color: #E6E6E6
-}
+@media only screen and (max-width: 550px){
 
-a{
-  transition: all 1 ease-in-out;
-   
-}
-
-header p:hover, a:hover ,.btn-primary:hover{
-  transform: scale(0.8);
+  .Carrusel-cards{
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
   
-
 }
-
-
   
-
-
-/*FOOTER DE TODAS LAS PAGINAS*-----------------------------------------*/
-
-
-footer div div a{
-  color:#7BB0D2;
-   
-
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
 }
 
-footer div div a:hover{
+ .bg-carrusel{
+ background-color: #DADADA;
 
-  color: greenyellow;
-}
+
+
+
+
+
+
+ }
+
 
 
 /*Aca comienza main del archivo "Nosotros" */
