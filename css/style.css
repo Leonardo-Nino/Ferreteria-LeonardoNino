@@ -30,33 +30,10 @@ body{
   
 }
 
-<<<<<<< HEAD
-header {
-  position: sticky;
-  width: 100%;
-  top: 0;
-  height: 80px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  grid-area: header;
-}
-
-header a {
-  text-decoration: none;
-}
-
-nav ul{
-  font-family: "roboto";
-  list-style: none;
-  margin-left: 10px;
-  padding: 10px;
-=======
 
 .bg-color{
   background-color: #3D7FAA
  }
->>>>>>> Bootstrap
  
  a{
    transition: all 1 ease-in-out;
@@ -93,103 +70,6 @@ footer div div a:hover{
 /* ACA INDEX--------------------------------------------------------------*/
 
 
-<<<<<<< HEAD
-/*------------------------------- Aqui Empieza Body de INDEX , NOSOTROS Y CATALOGO "GRID",-----------------------!*/
-
-
-.contenedorBody {
-  display: grid;
-  grid-template-rows: 80px 70vh  0.1fr;    /*tengo muchos problemas con las medidas*/
-  grid-template-columns: 1fr;
-  grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";   
-                   
-  flex-wrap: wrap;     
-              
-  background-image: rgb(238,174,202);
-  background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  background-size: 500% 200%;
-  animation-name: animacion_fondo ;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
-
-@keyframes animacion_fondo {
-   0% {
-
-   }
-   25% {
-    background-position: 0% 50% ;
-
-   }
-   50%{ background-position: 100% 50% ;
-
-   }
-   100%{ background-position: 0% 50% ;
-
-   }
-  
-}
-
-
-
-
-/* Aqui empieza Main del Index----------------------------*/
-
-
-
-
-.mainIndex{
-padding: 10px;
-font-family:'Arial Narrow Bold', sans-serif;
-font-size: medium;
-text-align: center;
-color: black;
-grid-area: main;
-display: flex;
-flex-wrap: wrap;
-flex-direction:column;
-justify-content: center;
-text-align: center;
-align-items: center;
-
-
-}
-.buttonIndex{ 
-   border-color:  #aaca1d;
-  font-family: "roboto";
-  text-transform: uppercase;
-  width: 140px;
-  height: 40px;
-  border-radius: 15px; 
-  margin-top: 30px;
-
-}
-
-.buttonIndex:hover {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-  
-}
-
-main button a {
-  text-decoration: none;
-  color: black;
-}
-
-.contenedorLogo{
-  width: 100%;
-  height: 100px;
-  
-}
-
-
-.logoMain{
-  width: 100%;
-  text-align: center;
-=======
 .contenedor-main{
   height: 70vh;
   background-image: rgb(61,127,170);
@@ -200,7 +80,6 @@ main button a {
 
 .logoMain{
  
->>>>>>> Bootstrap
   font-family: "logo";
   font-size: 4em;
   text-decoration-line: underline;
@@ -215,59 +94,6 @@ main button a {
 
 @media only screen and (max-width: 550px){
 
-<<<<<<< HEAD
-
-
-
-/*FOOTER DE TODAS LAS PAGIMAS---------------------------*/
-
-
-footer{ 
-  width: 100%;
-   height: fit-content;
-  padding: 10px 10px 100px 10px ;
-  font-family: "roboto";
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-items: center;
-  flex-wrap: wrap;
-  height: 80px;
-  grid-area: footer;
-  
-}
-
-.footerIcono{
-  max-width: 40px ;
-  margin-left:20%;
-  
-  
-}
-.footerBoxes{
- 
-  align-self:center;
-
-}
-
-
-/*------------------------ MEDIA QUERRY PARA EL FOOTER-------------------------*/
-
-@media only screen and (max-width: 850px){
-
-  .googleMap {
-    display:none;
-  }      
-  
-}
-  
-@media only screen and (max-width: 1000px){
-
-  .footerParrafo{
-    display:none;
-  }
-
-}
-=======
   .Carrusel-cards{
     flex-direction: column;
     align-items: center;
@@ -291,7 +117,6 @@ footer{
 
 
  }
->>>>>>> Bootstrap
 
 
 
