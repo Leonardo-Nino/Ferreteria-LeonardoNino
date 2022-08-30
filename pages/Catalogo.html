@@ -4,75 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <!--FaviCon choto por ahora-->
+            <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- bootstrap Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+        <!--FaviCon choto por ahora-->
     <link rel="Icon" type="image" href="../images/favicon.ico">
-    <title>Catalogo</title>
+    <link rel="stylesheet" href="../css/style.css">
+<title>Catalogo</title>
 </head>
-<body class="contenedorBody">
+<body>
 <!-- HEADEAR LOGO + NAV -->
-<header >
-    <a href="../index.html"><p class="logoHeader"> ferrecord </p></a>
-    <nav>
-        <ul>    
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href= "#">Catalogo</a></li>
-            <li><a href="./Nosotros.html">Nosotros</a></li>
-            <li><a href="./TipsConstruccion.html">Tips de Construccion</a></li>
-            <li><a href="./Contacto.html">Contacto</a></li>
-        </ul>        
-    </nav>
-</header>
+    <header class="container-fluid bg-color">
+        <div class ="row">
+            <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="../index.html"><p class="logoHeader"> ferrecord </p></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active hover-footer" aria-current="page" href="../index.html">Inicio</a>
+                              </li>
+                          <li class="nav-item">
+                            <a class="nav-link  hover-footer" aria-current="page" href="#">Catálogo</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link  hover-footer" href="./Nosotros.html">Nosotros</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link  hover-footer" href="./TipsConstruccion.html">Tips Construcción</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link "  href="./Contacto.html">Contacto</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+              </nav>
+        </div>
+    </header>
 <!--hasta aca logo mas nav -->
-<main class= "mainCatagolo">
-    <div class="contenedorCatalogo">
-        <section class="herramientas boxCatalogo"> 
-            <a href="./FerreOnline.html"><p>Herramientas</p></a> 
-        </section>
-
-        <section class="pinturas  boxCatalogo">
-            <a href="./FerreOnline.html"><p>Pinturas</p></a>
-        </section>
-
-        <section class="hogarDecoracion  boxCatalogo">
-            <a href="./FerreOnline.html"><p>Hogar y decoracion</p></a>
-        </section>
-
-        <section class="cerrajeria  boxCatalogo">
-            <a href="./FerreOnline.html"><p>Cerrajeria</p></a>
-        </section>
-
-        <section class="construccion  boxCatalogo">
-            <a href="./FerreOnline.html "><p>Materiales para construccion</p></a>
-        </section>
-
-        <section class="electricidad  boxCatalogo">
-            <a href="./FerreOnline.html"><p>Electricidad</p>
-        </section></a> 
-    </div>    
-</main>
+<!-- MAIN CATALOGO -->
+    <main class="cointerner-fluid mt-3">
+        <div class="row">
+              <h1 class="text-center ">Catalogo de Productos</h1>
+              <section>
+                <button class=" col-mg-2 btn btn-primary ms-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Herramientas 
+                </button>
+              </section>
+                <div class= "d-sm-flex justify-content-around  catalogo-cards ms-2 pe-4"> 
+                  <div class="card collapse show  w-auto transform" id="collapseWidthExample">
+                    <img src="../images/cajas de herramientas.png" class="card-img-top" alt="cajas "> 
+                    <div class="card-body">
+                      <h5 class="card-title">Cajas Almacenamiento</h5>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div> 
+                  </div>                 
+                  <div class="card collapse show w-auto transform" id="collapseWidthExample">
+                    <img src="../images/Herramientas electricas.png" class="card-img-top" alt="Herramientas electricas"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Herramientas Electricas </h5>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div> 
+                  </div>
+                  <div class="card collapse show w-auto transform" id="collapseWidthExample" >
+                    <img src="../images/Herramientas.png" class="card-img-top" alt="Herramientas"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Herramientas manuales </h5>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div> 
+                  </div>
+                  <div class="card collapse show w-auto transform" id="collapseWidthExample">
+                    <img src="../images/nivel.png" class="card-img-top" alt="Niveles y escuadras"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Niveles y escuadras </h5>
+                      
+                      <a href="#" class="btn btn-primary">Ver mas </a>
+                    </div>
+                  </div>
+                </div>
+              <section>
+                <button class=" col-mg-2 btn btn-primary ms-2 mb-2 mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidth" aria-expanded="true" aria-controls="collapseWidth">
+                  Electricidad
+                </button>
+              </section>
+              <div class= "d-sm-flex justify-content-around  catalogo-cards mb-2 ms-2 pe-4"> 
+                <div class="card collapse show  w-auto transform" id="collapseWidth">
+                  <img src="../images/cajas de herramientas.png" class="card-img-top" alt="cajas "> 
+                  <div class="card-body">
+                    <h5 class="card-title">Cajas Almacenamiento</h5>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div> 
+                </div>                 
+                <div class="card collapse show w-auto transform" id="collapseWidth">
+                  <img src="../images/Herramientas electricas.png" class="card-img-top" alt="Herramientas electricas"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Herramientas Electricas </h5>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div> 
+                </div>
+                <div class="card collapse show w-auto transform" id="collapseWidth" >
+                  <img src="../images/Herramientas.png" class="card-img-top" alt="Herramientas"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Herramientas manuales </h5>
+                    <a href="#" class="btn btn-primary">Ver mas</a>
+                  </div> 
+                </div>
+                <div class="card collapse show w-auto transform" id="collapseWidth">
+                  <img src="../images/nivel.png" class="card-img-top" alt="Niveles y escuadras"> 
+                  <div class="card-body">
+                    <h5 class="card-title">Niveles y escuadras </h5>
+                    
+                    <a href="#" class="btn btn-primary">Ver mas </a>
+                  </div>
+                </div>   
+              </div>
+              <section>
+                <button class=" col-mg-2 btn btn-primary mt-2 ms-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#Example" aria-expanded="false" aria-controls="Example">
+                Tercera 
+                </button>
+              </section>
+                <div class= "d-sm-flex justify-content-around  catalogo-cards ms-2 pe-4"> 
+                  <div class="card collapse show  w-auto transform" id="Example">
+                    <img src="../images/cajas de herramientas.png" class="card-img-top" alt="cajas "> 
+                    <div class="card-body">
+                      <h5 class="card-title">Cajas Almacenamiento</h5>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div> 
+                  </div>                 
+                  <div class="card collapse show w-auto transform" id="Example">
+                    <img src="../images/Herramientas electricas.png" class="card-img-top" alt="Herramientas electricas"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Herramientas Electricas </h5>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div> 
+                  </div>
+                  <div class="card collapse show w-auto transform" id="Example" >
+                    <img src="../images/Herramientas.png" class="card-img-top" alt="Herramientas"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Herramientas manuales </h5>
+                      <a href="#" class="btn btn-primary">Ver mas</a>
+                    </div> 
+                  </div>
+                  <div class="card collapse show w-auto transform" id="Example">
+                    <img src="../images/nivel.png" class="card-img-top" alt="Niveles y escuadras"> 
+                    <div class="card-body">
+                      <h5 class="card-title">Niveles y escuadras </h5>
+                      
+                      <a href="#" class="btn btn-primary">Ver mas </a>
+                    </div>
+                  </div>
+                </div>
+                <section>
+                  <button class=" col-mg-2 btn btn-primary mt-2 ms-2 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#ample" aria-expanded="false" aria-controls="ample">
+                  Cuarta 
+                  </button>
+                </section>
+                  <div class= "d-sm-flex justify-content-around  catalogo-cards mb-2 ms-2 pe-4"> 
+                    <div class="card collapse show  w-auto transform" id="ample">
+                      <img src="../images/cajas de herramientas.png" class="card-img-top" alt="cajas "> 
+                      <div class="card-body">
+                        <h5 class="card-title">Cajas Almacenamiento</h5>
+                        <a href="#" class="btn btn-primary">Ver mas</a>
+                      </div> 
+                    </div>                 
+                    <div class="card collapse show w-auto transform" id="ample">
+                      <img src="../images/Herramientas electricas.png" class="card-img-top" alt="Herramientas electricas"> 
+                      <div class="card-body">
+                        <h5 class="card-title">Herramientas Electricas </h5>
+                        <a href="#" class="btn btn-primary">Ver mas</a>
+                      </div> 
+                    </div>
+                    <div class="card collapse show w-auto transform" id="ample" >
+                      <img src="../images/Herramientas.png" class="card-img-top" alt="Herramientas"> 
+                      <div class="card-body">
+                        <h5 class="card-title">Herramientas manuales </h5>
+                        <a href="#" class="btn btn-primary">Ver mas</a>
+                      </div> 
+                    </div>
+                    <div class="card collapse show w-auto transform" id="ample">
+                      <img src="../images/nivel.png" class="card-img-top" alt="Niveles y escuadras"> 
+                      <div class="card-body">
+                        <h5 class="card-title">Niveles y escuadras </h5>
+                        
+                        <a href="#" class="btn btn-primary">Ver mas </a>
+                      </div>
+                    </div>
+                  </div>
+        </div>
+    </main>
 <!--Footer desde aca-->
-<footer >
-    <div  class="footerBoxes">
-        <img src="../images/email.png" alt="icono mail" class="footerIcono"> 
-        <p>tunegocio@gmail.com</p>
+<footer   class="container-fluid  background-footer ">
+    <div  class="row text-center ">
+      <div class="col-md-3 border-end border-bottom" >
+          <a href= "../pages/Contacto.html" ><i class="bi bi-envelope-fill fs-1"></i></a>
+          <p>ferrecord@contacto.com</p>
+      </div>
+      <div  class="col-md-3 border-end border-bottom">
+        <a href= "https://wa.me/358451750883 "  target="_blank" ><i class="bi bi-telephone-fill fs-1 "></i></a>
+          <p>45881199</p>
+      </div>
+      <div  class="col-md-3 border-end border-bottom"> 
+        <a href= "https://goo.gl/maps/Yy9kP2972a3zkfYB8" target="_blank"><i class="bi bi-geo-alt-fill fs-1"></i></a>
+        <p>Av. Colon 1459 <br>
+          Cordoba, Argentina</p>
+      </div>
+      <div  class= "col-md-3 border-bottom"> 
+        <a href= "#"><i class="bi bi-clock-fill fs-1 "></i></a>   
+        <p>Lun a Vier 8:30hs. a 13hs. - 16hs. a 19hs.</p>
+        <p>Sábados de 9hs. a 13hs</p>    
+      </div>
     </div>
+  </footer>
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
-    <div  class="footerBoxes">
-        <img src="../images/call.png" alt="icono tel" class="footerIcono">
-        <p>45881199</p>
-    </div>
-    
-    <div  class="footerBoxes"> 
-        <img src="../images/adress.png"alt="icono direccion" class="footerIcono">
-        <p>Av. Colom 14589, Cordoba, Argentina</p>
-    </div>
-
-    <div class="googleMap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.044519150309!2d24.925000515601248!3d60.16344185090642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a4ab188e101%3A0x1da95eb6dbabd510!2sKalevankatu%2050%2C%2000180%20Helsinki!5e0!3m2!1ses!2sfi!4v1658487299799!5m2!1ses!2sfi"
-        width="300" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</footer>
- <!--hasta aqui footer-->
 </body>
 </html>
