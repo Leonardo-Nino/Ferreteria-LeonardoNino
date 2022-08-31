@@ -1,5 +1,8 @@
-.transform:hover{
-    transform: scale(0.95);
+/*Nesting------------------------*/
+.transform{
+    &:hover{
+            transform: scale(0.95);
+        }
 }
 
 @media only screen and (max-width: 571px) {

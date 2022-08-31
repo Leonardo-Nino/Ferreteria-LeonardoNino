@@ -45,20 +45,21 @@ header p:hover, ul li a:hover {
   margin-right: 10px;
   color: #013c44; }
 
-.descripcionMain {
+.descripcion-Main {
   font-family: 'roboto'; }
 
 .carousel-control-next, .carousel-control-prev {
   width: 10%; }
 
 .bg-carrusel {
-  background-color: #DADADA; }
+  background-color: #dadada; }
 
 @media only screen and (max-width: 550px) {
   .Carrusel-cards {
     flex-direction: column;
     align-items: center; } }
 
+/*Nesting------------------------*/
 .transform:hover {
   transform: scale(0.95); }
 
@@ -69,7 +70,7 @@ header p:hover, ul li a:hover {
     align-items: center; } }
 
 .main-Contacto {
-  background-color: #DADADA; }
+  background-color: #dadada; }
 
 @media (max-width: 761px) {
   .margenTop {

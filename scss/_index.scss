@@ -11,7 +11,7 @@
     color: #013c44; 
 }
 
-.descripcionMain {
+.descripcion-Main {
     font-family: 'roboto'; 
 }
 
@@ -20,7 +20,7 @@
 }
 
 .bg-carrusel {
-    background-color: #DADADA; 
+    background-color: $background; 
 }
 
 @media only screen and (max-width: 550px) {
