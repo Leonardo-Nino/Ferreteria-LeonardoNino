@@ -1,0 +1,11 @@
+.transform:hover{
+    transform: scale(0.95);
+}
+
+@media only screen and (max-width: 571px) {
+    .catalogo-cards {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    }  
+}

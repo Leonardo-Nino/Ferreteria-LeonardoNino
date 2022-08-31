@@ -1,0 +1,31 @@
+.contenedor-main {
+    height: 100vh;
+    background-image: #3d7faa;
+    background-image: linear-gradient(152deg, #3d7faa 1%, #5699c4 30%, #7bb0d2 38%, silver 71%, #dadada 83%); }
+
+.logo-Main {
+    font-family: 'logo';
+    font-size: 4em;
+    text-decoration-line: underline;
+    margin-right: 10px;
+    color: #013c44; 
+}
+
+.descripcionMain {
+    font-family: 'roboto'; 
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 10%;
+}
+
+.bg-carrusel {
+    background-color: #DADADA; 
+}
+
+@media only screen and (max-width: 550px) {
+        .Carrusel-cards {
+        flex-direction: column;
+        align-items: center; 
+    } 
+}

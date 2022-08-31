@@ -4,25 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-<!--FaviCon choto por ahora-->
+        <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!-- bootstrap Iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> 
+        <!--FaviCon choto por ahora-->
     <link rel="Icon" type="image" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tips Construccion</title>
 </head>
 <body>
-<!-- LOGO + NAV -->
-    <header >
-        <a href="../index.html"><p class="logoHeader"> ferrecord </p></a>
-        <nav>
-            <ul>    
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Catalogo.html">Catalogo</a></li>
-                <li><a href="./Nosotros.html">Nosotros</a></li>
-                <li><a href="#">Tips de Construccion</a></li>
-                <li><a href="./Contacto.html">Contacto</a></li>
-            </ul>        
+<!-- HEADEAR LOGO + NAV -->
+<header class="container-fluid bg-color">
+    <div class ="row">
+        <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><p class="logo-Header"> ferrecord </p></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active hover-footer" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  hover-footer" aria-current="page" href="./Catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  hover-footer" href="./Nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  hover-footer" href="#">Tips Construcción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link "  href="./Contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>
+    </div>
+</header>
 <!--Main desde aca -->
     <main class="mainConstruccion">
         <h1>Aqui podras encontrar articulos de interes</h1>
@@ -48,41 +75,46 @@
                 <article class="articulosConstruccion">
                     <h3>Como cambiar una foco de luz </h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/O9v0SGxdos0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                     clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, distinctio ad! Distinctio maiores quidem rerum nisi qui eligendi! Amet corrupti delectus quod error corporis voluptate, dolores maiores laborum tenetur ipsa velit? Facilis atque fugit eum,
-                     expedita excepturi ad reiciendis tempora doloremque itaque odit minima qui, quo sed molestias ullam accusamus?
+                    expedita excepturi ad reiciendis tempora doloremque itaque odit minima qui, quo sed molestias ullam accusamus?
                     </p>     
                 </article>
-                 <article  class="articulosConstruccion">
+                <article  class="articulosConstruccion">
                     <h3>Como pintar una pared</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/zqdUj1DksRU" title="YouTube video player" frameborder="0" allow="accelerometer;
-                     autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                     </iframe>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorum eveniet provident voluptate explicabo beatae dolore distinctio sequi reiciendis quidem dignissimos itaque deleniti eius nihil eos ipsam neque officia dolorem quasi sapiente, odio amet? Necessitatibus minima nemo esse aspernatur velit atque laudantium exercitationem accusamus deleniti. 
                         Veniam ipsa dolorum placeat voluptatum.
                     </p>
-                 </article>
+                </article>
         </section>
     </main>
-        
-<!--Footer desde aca-->
-    <footer>
-    <div>
-        <img src="../images/email.png" alt="icono mail" class="footerIcono"> 
-        <p>tunegocio@gmail.com</p>
-    </div>
-
-    <div>
-        <img src="../images/call.png" alt="icono tel" class="footerIcono">
-        <p>45881199</p>
-    </div>
-    
-    <div> 
-        <img src="../images/adress.png"alt="icono direccion" class="footerIcono">
-        <p>Av. Colom 14589, Cordoba, Argentina</p>
-    </div>
-    <!--  a esto le voy aplicar flex box pronto <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.044519150309!2d24.925000515601248!3d60.16344185090642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a4ab188e101%3A0x1da95eb6dbabd510!2sKalevankatu%2050%2C%2000180%20Helsinki!5e0!3m2!1ses!2sfi!4v1658487299799!5m2!1ses!2sfi" width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+<!--Footer desde aca-->        
+    <footer   class="container-fluid  background-footer ">
+        <div  class="row text-center ">
+            <div class="col-md-3 border-end border-bottom" >
+                <a href= "../pages/Contacto.html" ><i class="bi bi-envelope-fill fs-1"></i></a>
+                <p>ferrecord@contacto.com</p>
+            </div>
+            <div  class="col-md-3 border-end border-bottom">
+                <a href= "https://wa.me/358451750883 "  target="_blank" ><i class="bi bi-telephone-fill fs-1 "></i></a>
+                <p>45881199</p>
+            </div>
+            <div  class="col-md-3 border-end border-bottom"> 
+                <a href= "https://goo.gl/maps/Yy9kP2972a3zkfYB8" target="_blank"><i class="bi bi-geo-alt-fill fs-1"></i></a>
+                <p>Av. Colon 1459 <br>
+                Cordoba, Argentina</p>
+            </div>
+            <div  class= "col-md-3 border-bottom"> 
+                <a href= "#"><i class="bi bi-clock-fill fs-1 "></i></a>   
+                <p>Lun a Vier 8:30hs. a 13hs. - 16hs. a 19hs.</p>
+                <p>Sábados de 9hs. a 13hs</p>    
+            </div>
+        </div>
     </footer>
-<!--hasta aqui footer-->
+<!-- Script Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

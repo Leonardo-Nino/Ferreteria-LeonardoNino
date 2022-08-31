@@ -1,0 +1,16 @@
+.logo-Header {
+    font-family: "logo";
+    font-size: 2em;
+    text-decoration-line: underline;
+    margin-right: 10px;
+    color: #013c44; 
+}
+.bg-color {
+    background-color: #3D7FAA;
+}
+a,  .hover-footer {
+    transition: all 1 ease-in-out; 
+}
+header p:hover, ul li a:hover {
+    transform: scale(0.8);
+}

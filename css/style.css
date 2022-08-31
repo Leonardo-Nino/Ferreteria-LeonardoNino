@@ -1,3 +1,80 @@
+.btn-primary {
+  background-color: #DADADA;
+  color: black;
+  border-color: #94bfd6;
+  border-radius: 10px; }
+
+.btn-primary:hover {
+  background-color: #4c7c96;
+  transition: all 1 ease-in-out; }
+
+.background-footer {
+  background-color: #C0C0C0; }
+
+footer div div a {
+  color: #7BB0D2; }
+
+footer div div a:hover {
+  color: greenyellow; }
+
+.logo-Header {
+  font-family: "logo";
+  font-size: 2em;
+  text-decoration-line: underline;
+  margin-right: 10px;
+  color: #013c44; }
+
+.bg-color {
+  background-color: #3D7FAA; }
+
+a, .hover-footer {
+  transition: all 1 ease-in-out; }
+
+header p:hover, ul li a:hover {
+  transform: scale(0.8); }
+
+.contenedor-main {
+  height: 100vh;
+  background-image: #3d7faa;
+  background-image: linear-gradient(152deg, #3d7faa 1%, #5699c4 30%, #7bb0d2 38%, silver 71%, #dadada 83%); }
+
+.logo-Main {
+  font-family: 'logo';
+  font-size: 4em;
+  text-decoration-line: underline;
+  margin-right: 10px;
+  color: #013c44; }
+
+.descripcionMain {
+  font-family: 'roboto'; }
+
+.carousel-control-next, .carousel-control-prev {
+  width: 10%; }
+
+.bg-carrusel {
+  background-color: #DADADA; }
+
+@media only screen and (max-width: 550px) {
+  .Carrusel-cards {
+    flex-direction: column;
+    align-items: center; } }
+
+.transform:hover {
+  transform: scale(0.95); }
+
+@media only screen and (max-width: 571px) {
+  .catalogo-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+.main-Contacto {
+  background-color: #DADADA; }
+
+@media (max-width: 761px) {
+  .margenTop {
+    margin: 2rem; } }
+
 @font-face {
   font-family: logo;
   src: url(../assets/logo.TTF); }
@@ -8,120 +85,14 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "roboto"; }
+  font-family: 'roboto'; }
 
-
-/* ACA CONFIGURACION BOTONES -----------------------------------*/
-
-.btn-primary {
-  background-color: #DADADA;
-  color: black;
-  border-color: #94bfd6;
-  border-radius: 10px;
-}
-  
-
-.btn-primary:hover {
-  background-color: #4c7c96;
-  transition: all 1 ease-in-out; }
-
-
-
-
-
-/* Aqui empieza Header, Nav y logo para TODAS las paginas-------------------*/
-
-
-.logoHeader {
-  font-family: "logo";
-  font-size: 2em;
-  text-decoration-line: underline;
-  margin-right: 10px;
-  color: #013c44; }
-
-.bg-color {
-  background-color: #3D7FAA; }
-
-a,  .hover-footer {
-  transition: all 1 ease-in-out; }
-
-header p:hover, ul li a:hover {
-  transform: scale(0.8); }
-
-
-
-/*FOOTER DE TODAS LAS PAGINAS*--------------------------------------------*/
-
-
-.background-footer {
-  background-color: #C0C0C0; }
-
-footer div div a {
-  color: #7BB0D2; }
-
-footer div div a:hover {
-  color: greenyellow;
-}
-
-
-/* ACA INDEX--------------------------------------------------------------*/
-
-
-.contenedor-main {
-  height: 100vh;
-  background-image: #3d7faa;
-  background-image: linear-gradient(152deg, #3d7faa 1%, #5699c4 30%, #7bb0d2 38%, silver 71%, #dadada 83%); }
-
-.logoMain {
-  font-family: "logo";
-  font-size: 4em;
-  text-decoration-line: underline;
-  margin-right: 10px;
-  color: #013c44; }
-
-.descripcionMain {
-  font-family: "roboto"; }
-
-@media only screen and (max-width: 550px) {
-  .Carrusel-cards {
-    flex-direction: column;
-    align-items: center; } }
-
-.carousel-control-next, .carousel-control-prev {
-  width: 10%; }
-
-.bg-carrusel {
-  background-color: #DADADA; }
-
-
-
-/* ACA EMPIEZA MAIN DEL ARCHIVO CATALOGO-------------------------------------- */
-
-
-.transform:hover{
-  transform: scale(0.95);
-
-}
-
-@media only screen and (max-width: 571px) {
-  .catalogo-cards {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    }  
-    
-}
-
-
-
-
-/* Aca comienza main del archivo "Nosotros" !!!!!!!!!!!!!!!!!EN CONSTRUCCION !!!!!!!!!!!!!!!!!!!
+/* Aca comienza main del archivo Nosotros !!!!!!!!!!!!!!!!!EN CONSTRUCCION !!!!!!!!!!!!!!!!!!! */
 .mainNosotros {
   margin-top: 0px;
   padding: 10px;
   text-align: center;
   background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   grid-area: main; }
 
 .contenedorNosotros {
@@ -154,27 +125,9 @@ footer div div a:hover {
   border: solid black 1px;
   margin: auto;
   width: 33%;
-  height: 210px; } */
+  height: 210px; }
 
-
-
-
-
-  /* ACA EMPIEZA MAIN DEL ARCHICO CONTACTO -----------------------------------*/
-
-.mainContacto {
-  background-color: #DADADA; }
-
-@media (max-width: 761px) {
-  .margenTop {
-    margin: 2rem; } }
-
-
-
-
-/* ACA COMIENZA MAIN DEL ARCHIVO "TIPS CONSTRUCCION */
-
-
+/* ACA COMIENZA MAIN DEL ARCHIVO TIPS CONSTRUCCION----------- EN CONSTRUCCION----------- */
 .mainConstruccion {
   padding: 10px;
   background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
@@ -192,7 +145,3 @@ footer div div a:hover {
 
 main section h3 {
   margin-bottom: 10px; }
-
-@media only screen and (max-width: 850px) {
-  .googleMap {
-    display: none; } }
