@@ -57,7 +57,13 @@ header p:hover, ul li a:hover {
 @media only screen and (max-width: 550px) {
   .Carrusel-cards {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .none-para-movil {
+    display: none; } }
+
+@media only screen and (min-width: 551px) {
+  .none-para-desktop {
+    display: none; } }
 
 /*Nesting------------------------*/
 .transform:hover {
