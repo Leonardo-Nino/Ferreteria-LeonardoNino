@@ -3,8 +3,10 @@
 @import"./footer";
 @import"./_header-nav.scss";
 @import"./_index.scss";
-@import"./_catalogo.scss";
 @import"./_contacto.scss";
+@import"./_catalogo.scss";
+@import"./_Tips-construccion.scss";
+
 
 
 
@@ -27,7 +29,6 @@ body {
   margin-top: 0px;
   padding: 10px;
   text-align: center;
-  background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
   grid-area: main; }
 
 .contenedorNosotros {
@@ -46,41 +47,20 @@ body {
   border: solid black 1px;
   margin: auto;
   width: 33%;
-  height: 210px; }
+  height: auto; }
 
 .nuestraMision {
   background-color: #b3ada4;
   border: solid black 1px;
   margin: auto;
   width: 33%;
-  height: 210px; }
+  height: auto; }
 
 .nuestraVision {
   background-color: #a5b8bb;
   border: solid black 1px;
   margin: auto;
   width: 33%;
-  height: 210px; } 
+  height: auto; } 
 
-
-/* ACA COMIENZA MAIN DEL ARCHIVO TIPS CONSTRUCCION----------- EN CONSTRUCCION----------- */
-
-
-.mainConstruccion {
-  padding: 10px;
-  background-image: url(../images/white-painted-concrete-wall-gef58b93fb_1920.jpg);
-  font-family: Arial, Helvetica, sans-serif; }
-
-.seccionesConstruccion {
-  padding: 10px;
-  margin: 30px; }
-
-.articulosConstruccion {
-  border: 1px solid black;
-  padding: 10px;
-  background-color: lightgrey;
-  margin: 30px; }
-
-main section h3 {
-  margin-bottom: 10px; }
 

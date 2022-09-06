@@ -51,46 +51,90 @@
     </div>
 </header>
 <!--Main desde aca -->
-    <main class="mainConstruccion">
-        <h1>Aqui podras encontrar articulos de interes</h1>
-        <section class="seccionesConstruccion">
-            <h2>Pisos de madera</h2>
-            <article  class="articulosConstruccion">
-                    <h3>Como Instalar pisos flotantes</h3>
-                    <img src="../images/pisoflotante2.png" alt="pisoflotante">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum labore sed velit consectetur fugit culpa, commodi eaque dolorem earum omnis iure vero vitae rerum ullam saepe! Natus a autem in accusamus laborum, fugit dolor quisquam. Debitis magni dolor ullam explicabo illum mollitia! 
-                        Maiores nulla eaque voluptatem ratione, enim tenetur!
-                    </p>
-            </article>
-            <article  class="articulosConstruccion">
-                    <h3>Como quitar rayones en pisos de madera</h3>
-                    <img src="../images/pisoRayado.jpg" alt="piso rayado">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quasi? Tempora officiis fugiat soluta, harum dolore voluptate, aperiam totam odio quae ut corporis. Quae corporis corrupti molestias eius unde aspernatur incidunt saepe a quas? Soluta
-                        adipisci quidem itaque sint ex, nulla, quod odio totam eveniet vero officiis nemo numquam dolores?
-                    </p>
-                </article>   
-        </section>
-        <section class="seccionesConstruccion">
-            <h2>Hazlo tu mismo</h2>
-                <article class="articulosConstruccion">
-                    <h3>Como cambiar una foco de luz </h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O9v0SGxdos0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, distinctio ad! Distinctio maiores quidem rerum nisi qui eligendi! Amet corrupti delectus quod error corporis voluptate, dolores maiores laborum tenetur ipsa velit? Facilis atque fugit eum,
-                    expedita excepturi ad reiciendis tempora doloremque itaque odit minima qui, quo sed molestias ullam accusamus?
-                    </p>     
-                </article>
-                <article  class="articulosConstruccion">
-                    <h3>Como pintar una pared</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zqdUj1DksRU" title="YouTube video player" frameborder="0" allow="accelerometer;
-                    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga dolorum eveniet provident voluptate explicabo beatae dolore distinctio sequi reiciendis quidem dignissimos itaque deleniti eius nihil eos ipsam neque officia dolorem quasi sapiente, odio amet? Necessitatibus minima nemo esse aspernatur velit atque laudantium exercitationem accusamus deleniti. 
-                        Veniam ipsa dolorum placeat voluptatum.
-                    </p>
-                </article>
-        </section>
-    </main>
+    <main >
+        <h1 class=" text-center">Aqui podras encontrar articulos de interes</h1>
+        <div class="row justify-content-center">
+            <!-- DISPLAY nav only MOVIL  -->
+            <button class=" btn col-6 ms-3  btn-primary d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Indice
+            </button>   
+            <div class="col-sm-4 col-md-3 col-lg-2 collapse  d-sm-none" id="collapseExample">
+                <nav  id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy border-end">
+                    <nav class= " nav flex-column">
+                        <a class="nav-link" href="#item-1">Pisos de madera</a>
+                            <nav class="nav flex-column">
+                                <a class="nav-link ms-3 my-1" href="#instalacion">Instalacion</a>
+                                <a class="nav-link ms-3 my-1" href="#mantenimiento">Mantenimiento</a>
+                            </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                            <nav class="nav flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                    </nav>
+                </nav>  
+            </div> 
+            <!-- DISPLAY nav Only DESKTOP  -->
+            <div class="col-sm-4 col-md-3 col-lg-2 display-custom">
+                <nav  id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy border-end">
+                    <nav class="nav   flex-column">
+                        <a class="nav-link " href="#item-1">Pisos de madera</a>
+                            <nav class="nav  flex-column">
+                                <a class="nav-link ms-3 my-1" href="#instalacion">Instalacion</a>
+                                <a class="nav-link ms-3 my-1" href="#mantenimiento">Mantenimiento</a>
+                            </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                            <nav class="nav flex-column">
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                            </nav>
+                    </nav>
+                </nav>  
+            </div>   
+            <!-- DISPLAY CONTENT MOVIL AND DESKTOP -->
+            <div class="col-sm-8 col-md-9 col-lg-10"  data-bs-spy= "scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"">
+                <div id="item-1">
+                <h3>Pisos de madera</h3>
+                </div>
+                <div id="Instalacion">
+                    <article >
+                        <h4>Como Instalar pisos flotantes</h4>
+                        <img src="./images/pisoflotant2.png" alt="pisoflotante">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum labore sed velit consectetur fugit culpa, commodi eaque dolorem earum omnis iure vero vitae rerum ullam saepe! Natus a autem in accusamus laborum, fugit dolor quisquam. Debitis magni dolor ullam explicabo illum mollitia! 
+                            Maiores nulla eaque voluptatem ratione, enim tenetur!
+                        </p>
+                    </article>
+                </div>
+                <div id="mantenimiento">
+                    <article >
+                        <h4>Como quitar rayones en pisos de madera</h4>
+                        <img src="../images/pisoRaado.jpg" alt="piso rayado">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quasi? Tempora officiis fugiat soluta, harum dolore voluptate, aperiam totam odio quae ut corporis. Quae corporis corrupti molestias eius unde aspernatur incidunt saepe a quas? Soluta
+                            adipisci quidem itaque sint ex, nulla, quod odio totam eveniet vero officiis nemo numquam dolores?
+                        </p>
+                    </article>   
+                </div>
+                <div id="item-2">
+                    <h4>Item 2</h4>
+                    <p>...</p>
+                </div>
+                <div id="item-3">
+                    <h4>Item 3</h4>
+                    <p>...</p>
+                </div>
+                <div id="item-3-1">
+                    <h5>Item 3-1</h5>
+                    <p>...</p>
+                </div>
+                <div id="item-3-2">
+                    <h5>Item 3-2</h5>
+                    <p>...</p>
+                </div>
+                </div>
+            </div>
+        </div>
 <!--Footer desde aca-->        
     <footer   class="container-fluid  background-footer ">
         <div  class="row text-center ">
