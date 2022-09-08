@@ -1,5 +1,6 @@
+/*MAPA DE COLORES*/
 .btn-primary {
-  background-color: #DADADA;
+  background-color: #dadada;
   color: black;
   border-color: #94bfd6;
   border-radius: 10px; }
@@ -25,7 +26,7 @@ footer div div a:hover {
   color: #013c44; }
 
 .bg-color {
-  background-color: #3D7FAA; }
+  background-color: #3d7faa; }
 
 a, .hover-footer {
   transition: all 1 ease-in-out; }
@@ -45,6 +46,8 @@ header p:hover, ul li a:hover {
   background-image: #3d7faa;
   background-image: linear-gradient(152deg, #3d7faa 1%, #5699c4 30%, #7bb0d2 38%, silver 71%, #dadada 83%); }
 
+/*MIXIN*/
+/*MIXIN APLICADO*/
 .logo-Main {
   font-family: 'logo';
   font-size: 4em;
@@ -83,34 +86,25 @@ header p:hover, ul li a:hover {
 .transform:hover {
   transform: scale(0.95); }
 
-@media only screen and (max-width: 571px) {
+@media only screen and (max-width: 576px) {
   .catalogo-cards {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .display-movil {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+  .btn-witdh-movil {
+    width: 70vw; } }
+
+@media only screen and (min-width: 575px) {
+  .btn-witdh-desk {
+    width: 30vw; } }
 
 @media only screen and (max-width: 575px) {
   .display-custom {
     display: none; } }
-
-@font-face {
-  font-family: logo;
-  src: url(../assets/logo.TTF); }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'roboto'; }
-
-/* Aca comienza main del archivo Nosotros !!!!!!!!!!!!!!!!!EN CONSTRUCCION !!!!!!!!!!!!!!!!!!! */
-.mainNosotros {
-  margin-top: 0px;
-  padding: 10px;
-  text-align: center;
-  grid-area: main; }
 
 .contenedorNosotros {
   margin-top: 70px;
@@ -123,7 +117,7 @@ body {
   min-width: 400px;
   height: 50vh; }
 
-.nuestrosValores {
+.nuestrosValores, .nuestraMision, .nuestraVision {
   background-color: #b0caaf;
   border: solid black 1px;
   margin: auto;
@@ -131,15 +125,19 @@ body {
   height: auto; }
 
 .nuestraMision {
-  background-color: #b3ada4;
-  border: solid black 1px;
-  margin: auto;
-  width: 33%;
-  height: auto; }
+  background-color: #b3ada4; }
 
 .nuestraVision {
-  background-color: #a5b8bb;
-  border: solid black 1px;
-  margin: auto;
-  width: 33%;
-  height: auto; }
+  background-color: #a5b8bb; }
+
+@font-face {
+  font-family: logo;
+  src: url(../assets/logo.TTF); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'roboto'; }

@@ -1,6 +1,6 @@
 
 .main-Contacto {
-    background-color: $background;
+    background-color: map-get($paleta, gris-claro );
 }
 
 @media (max-width: 761px) {

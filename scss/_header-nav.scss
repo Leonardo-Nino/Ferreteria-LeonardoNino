@@ -3,10 +3,10 @@
     font-size: 2em;
     text-decoration-line: underline;
     margin-right: 10px;
-    color: #013c44; 
+    color: map-get($paleta , logo); 
 }
 .bg-color {
-    background-color: #3D7FAA;
+    background-color: map-get($paleta, azul-deep );
 }
 a,  .hover-footer {
     transition: all 1 ease-in-out; 

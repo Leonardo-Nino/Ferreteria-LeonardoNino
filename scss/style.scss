@@ -6,7 +6,7 @@
 @import"./_contacto.scss";
 @import"./_catalogo.scss";
 @import"./_Tips-construccion.scss";
-
+@import"./_nosotros.scss";
 
 
 
@@ -22,45 +22,3 @@
 body {
   font-family: 'roboto'; 
 }
-
-
-/* Aca comienza main del archivo Nosotros !!!!!!!!!!!!!!!!!EN CONSTRUCCION !!!!!!!!!!!!!!!!!!! */
-.mainNosotros {
-  margin-top: 0px;
-  padding: 10px;
-  text-align: center;
-  grid-area: main; }
-
-.contenedorNosotros {
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: stretch;
-  max-width: 100%;
-  min-width: 400px;
-  height: 50vh; }
-
-.nuestrosValores {
-  background-color: #b0caaf;
-  border: solid black 1px;
-  margin: auto;
-  width: 33%;
-  height: auto; }
-
-.nuestraMision {
-  background-color: #b3ada4;
-  border: solid black 1px;
-  margin: auto;
-  width: 33%;
-  height: auto; }
-
-.nuestraVision {
-  background-color: #a5b8bb;
-  border: solid black 1px;
-  margin: auto;
-  width: 33%;
-  height: auto; } 
-
-
