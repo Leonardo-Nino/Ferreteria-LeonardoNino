@@ -3,6 +3,15 @@
     .display-custom{
         display:none
     }
+    .bg-indice{
+        background-color: map-get($paleta, gris-medio);}
 
     
 }   
+
+
+
+.bg-contend{
+
+    background-color: map-get($paleta, gris-claro );
+}

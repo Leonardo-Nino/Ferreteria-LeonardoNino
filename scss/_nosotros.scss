@@ -1,27 +1,23 @@
-.contenedorNosotros {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: stretch;
-    max-width: 100%;
-    min-width: 400px;
-    height: 50vh; }
-
-.nuestrosValores {
-    background-color: #b0caaf;
-    border: solid black 1px;
-    margin: auto;
-    width: 33%;
-    height: auto; }
-
-.nuestraMision {
-    @extend .nuestrosValores;
-    background-color: #b3ada4;
+.card-about{
+    text-align: center;
+    
 }
 
-.nuestraVision {
-    @extend .nuestrosValores;
-    background-color: #a5b8bb;
-} 
+.card-about--valores{
+    @extend .card-about;
+    background-color: map-get($paleta, gris-medio );
+
+}
+
+
+.card-about--mision{
+    @extend .card-about;
+    background-color: map-get($paleta, azul-claro);
+
+}
+
+.card-about--vision{
+    @extend .card-about;
+    background-color: map-get($paleta, azul-deep);
+
+}

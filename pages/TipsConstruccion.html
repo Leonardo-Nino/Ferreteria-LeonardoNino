@@ -31,7 +31,7 @@
                 <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html"><p class="logo-Header"> ferrecord </p></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span ><i class=" fs-1 bi bi-bricks"></i></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
@@ -57,14 +57,14 @@
     </div>
 </header>
 <!--Main desde aca -->
-    <main >
+    <main class="container-fluid bg-contend" >
         <h1 class=" text-center">Aquí pondrás encontrar artículos de interés</h1>
         <div class="row justify-content-center">
             <!-- DISPLAY nav only MOVIL  -->
-            <button class=" btn col-6 ms-3  btn-primary d-sm-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class=" btn col-6 ms-3  btn-primary d-sm-none my-1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Indice
             </button>   
-            <div class="col-sm-4 col-md-3 col-lg-2 collapse  d-sm-none" id="collapseExample">
+            <div class="col-sm-4 col-md-3 col-lg-2 collapse  d-sm-none bg-indice" id="collapseExample">
                 <nav  id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy border-end">
                     <nav class= " nav flex-column">
                         <a class="nav-link" href="#item-1">Pisos de madera</a>
@@ -72,17 +72,16 @@
                                 <a class="nav-link ms-3 my-1" href="#instalacion">Instalacion</a>
                                 <a class="nav-link ms-3 my-1" href="#mantenimiento">Mantenimiento</a>
                             </nav>
-                        <a class="nav-link" href="#item-2">Item 2</a>
-                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <a class="nav-link" href="#item-2">Cómo pintar una pared</a>
+                        <a class="nav-link" href="#item-3">Construcción en seco</a>
                             <nav class="nav flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Instalación placas de yeso</a>
                             </nav>
                     </nav>
                 </nav>  
             </div> 
             <!-- DISPLAY nav Only DESKTOP  -->
-            <div class="col-sm-4 col-md-3 col-lg-2 display-custom">
+            <div class="col-sm-4 col-md-3 col-lg-2 display-custom bg-indice">
                 <nav  id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy border-end">
                     <nav class="nav   flex-column">
                         <a class="nav-link " href="#item-1">Pisos de madera</a>
@@ -90,57 +89,65 @@
                                 <a class="nav-link ms-3 my-1" href="#instalacion">Instalacion</a>
                                 <a class="nav-link ms-3 my-1" href="#mantenimiento">Mantenimiento</a>
                             </nav>
-                        <a class="nav-link" href="#item-2">Item 2</a>
-                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <a class="nav-link" href="#item-2">Cómo pintar una pared</a>
+                        <a class="nav-link" href="#item-3">Construcción en seco</a>
                             <nav class="nav flex-column">
-                                <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
-                                <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                                <a class="nav-link ms-3 my-1" href="#item-3-1">Instalación placas de yeso</a>
                             </nav>
                     </nav>
                 </nav>  
             </div>   
             <!-- DISPLAY CONTENT MOVIL AND DESKTOP -->
-            <div class="col-sm-8 col-md-9 col-lg-10"  data-bs-spy= "scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"">
+            <div class="col-sm-8 col-md-9 col-lg-10 "  data-bs-spy= "scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0"">
                 <div id="item-1">
-                <h3>Pisos de madera</h3>
+                    <h3>Pisos de madera</h3>
                 </div>
-                <div id="Instalacion">
+                <div id="instalacion">
                     <article >
                         <h4>Como Instalar pisos flotantes</h4>
-                        <img src="./images/pisoflotant2.png" alt="pisoflotante">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsum labore sed velit consectetur fugit culpa, commodi eaque dolorem earum omnis iure vero vitae rerum ullam saepe! Natus a autem in accusamus laborum, fugit dolor quisquam. Debitis magni dolor ullam explicabo illum mollitia! 
-                            Maiores nulla eaque voluptatem ratione, enim tenetur!
+                        <img src="../images/wooden-floor-g789b4ddd3_640.jpg" class="img-fluid" alt="pisoflotante">
+                        <p class="my-3 border-bottom">Los pisos de madera pueden añadirle un valor a tu casa y darle una apariencia bonita. Los pisos de madera duran más tiempo y son más prácticos que muchos otros tipos de piso. Además, puedes instalarlos tú mismo. 
+                            Estos son los pasos que te enseñarán a instalar pisos de madera....<a href="https://es.wikihow.com/instalar-un-piso-de-madera" target="_blank" class="link-info">leer mas</a>
                         </p>
                     </article>
                 </div>
                 <div id="mantenimiento">
                     <article >
                         <h4>Como quitar rayones en pisos de madera</h4>
-                        <img src="../images/pisoRaado.jpg" alt="piso rayado">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, quasi? Tempora officiis fugiat soluta, harum dolore voluptate, aperiam totam odio quae ut corporis. Quae corporis corrupti molestias eius unde aspernatur incidunt saepe a quas? Soluta
-                            adipisci quidem itaque sint ex, nulla, quod odio totam eveniet vero officiis nemo numquam dolores?
+                        <img src="../images/madera-arañazos-600x338.webp" class="img-fluid" alt="piso rayado">
+                        <p class="my-3 border-bottom">Si tienes pisos de madera, es prácticamente inevitable que los rayones se acumulen, incluso si siempre tienes cuidado para evitarlo. 
+                            La mayoría de los rayones se originan al mover los muebles y al dejar que las mascotas y pequeñas piedras ingresen a la casa...<a href="https://es.wikihow.com/quitar-rayones-en-un-piso-de-madera" target="_blank" class="link-info">leer mas</a>
                         </p>
                     </article>   
                 </div>
-                <div id="item-2">
-                    <h4>Item 2</h4>
-                    <p>...</p>
+                <div >
+                    <article>
+                        <h4 id="item-2">Cómo pintar una pared</h4>
+                        <iframe  class="ratio ratio-4x3" width="560" height="315" src="https://www.youtube.com/embed/zqdUj1DksRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <p class="my-3 border-bottom">En nuestro tutorial te mostramos como Pintar una pared lisa para los que no somos profesionales de la pintura.
+                        Hay claves técnicas y algunas herramientas y materiales que pueden favorecer un mejor resultado...<a href="https://www.bricocrack.tv/pintar-una-pared-lisa-resultado-profesional/" target="_blank" class="link-info">leer mas</a></p>
+                    </article>
                 </div>
                 <div id="item-3">
-                    <h4>Item 3</h4>
-                    <p>...</p>
+                    <article>
+                        <h4>Construcción en seco</h4>
+                        <img src="../images/Construcción-en-seco-Drywall.jpg" class="img-fluid" alt="Construcción en seco">
+                        <p  class="my-3 border-bottom">El cartón yeso, drywall, Pladur, Durlock, Tablaroca, volcanita o PYL (placa de yeso laminado, el nombre genérico oficial) es un material de construcción utilizado para la ejecución de tabiques interiores
+                        y revestimientos de techos y paredes. Suele utilizarse en forma de placas, paneles o tableros industrializados.
+                        Consiste en una placa de yeso laminado entre...<a href="https://es.wikipedia.org/wiki/Cart%C3%B3n_yeso" target="_blank" class="link-info">wikipedia</a></p>
+                    </article>
                 </div>
                 <div id="item-3-1">
-                    <h5>Item 3-1</h5>
-                    <p>...</p>
-                </div>
-                <div id="item-3-2">
-                    <h5>Item 3-2</h5>
-                    <p>...</p>
-                </div>
+                    <article>
+                        <h4>Instalación placas de yeso</h4>
+                        <img src="../images/Instalarpaneles-de-yeso.webp" class="img-fluid" alt="instalacion placas de yeso">
+                        <p  class="my-3 border-bottom">Para instalar las placas de yeso necesitás: parales y canaletas de fierro galvanizado, tornillos, cinta y masilla. Si pensás colocar alguna estantería
+                        o un mueble empotrado deberás colocar postes de madera en las canaletas de fierro... <a href="https://www.homify.com.ar/libros_de_ideas/5884756/placas-de-yeso-como-instalarlas-ventajas-y-desventajas" target="_blank" class="link-info">leer mas</a></p>
+                    </article>
                 </div>
             </div>
         </div>
+    </main>   
 <!--Footer desde aca-->        
     <footer   class="container-fluid  background-footer ">
         <div  class="row text-center ">

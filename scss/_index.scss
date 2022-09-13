@@ -1,7 +1,7 @@
 .contenedor-main {
     height: 100vh;
     background-image: map-get($paleta, azul-deep);
-    background-image: linear-gradient(152deg, map-get($paleta, azul-deep) 1%, 
+    background-image: linear-gradient(181deg, map-get($paleta, azul-deep) 1%, 
     map-get($paleta, azul-medio) 30%, map-get($paleta, azul-claro) 38%,
     map-get($paleta, gris-medio) 71%, map-get($paleta, gris-claro) 83%,);
 }
@@ -23,9 +23,6 @@
     @include logo;
 }
 
-.descripcion-Main {
-    font-family: 'roboto'; 
-}
 
 .carousel-control-next, .carousel-control-prev {
     width: 10%;

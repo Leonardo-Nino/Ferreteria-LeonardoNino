@@ -44,7 +44,7 @@ header p:hover, ul li a:hover {
 .contenedor-main {
   height: 100vh;
   background-image: #3d7faa;
-  background-image: linear-gradient(152deg, #3d7faa 1%, #5699c4 30%, #7bb0d2 38%, silver 71%, #dadada 83%); }
+  background-image: linear-gradient(181deg, #3d7faa 1%, #5699c4 30%, #7bb0d2 38%, silver 71%, #dadada 83%); }
 
 /*MIXIN*/
 /*MIXIN APLICADO*/
@@ -54,9 +54,6 @@ header p:hover, ul li a:hover {
   text-decoration-line: underline;
   margin-right: 10px;
   color: #013c44; }
-
-.descripcion-Main {
-  font-family: 'roboto'; }
 
 .carousel-control-next, .carousel-control-prev {
   width: 10%; }
@@ -84,7 +81,8 @@ header p:hover, ul li a:hover {
 
 /*Nesting------------------------*/
 .transform:hover {
-  transform: scale(0.95); }
+  transform: scale(0.95);
+  color: lawngreen; }
 
 @media only screen and (max-width: 576px) {
   .catalogo-cards {
@@ -104,31 +102,24 @@ header p:hover, ul li a:hover {
 
 @media only screen and (max-width: 575px) {
   .display-custom {
-    display: none; } }
+    display: none; }
+  .bg-indice {
+    background-color: silver; } }
 
-.contenedorNosotros {
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: stretch;
-  max-width: 100%;
-  min-width: 400px;
-  height: 50vh; }
+.bg-contend {
+  background-color: #dadada; }
 
-.nuestrosValores, .nuestraMision, .nuestraVision {
-  background-color: #b0caaf;
-  border: solid black 1px;
-  margin: auto;
-  width: 33%;
-  height: auto; }
+.card-about, .card-about--valores, .card-about--mision, .card-about--vision {
+  text-align: center; }
 
-.nuestraMision {
-  background-color: #b3ada4; }
+.card-about--valores {
+  background-color: silver; }
 
-.nuestraVision {
-  background-color: #a5b8bb; }
+.card-about--mision {
+  background-color: #7bb0d2; }
+
+.card-about--vision {
+  background-color: #3d7faa; }
 
 @font-face {
   font-family: logo;
