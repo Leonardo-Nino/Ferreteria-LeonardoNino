@@ -39,7 +39,11 @@ header p:hover, ul li a:hover {
   color: black; }
 
 .nav-link:hover {
-  color: #bdd6be; }
+  color: #809e81; }
+
+@media only screen and (max-width: 576px) {
+  header p:hover, ul li a:hover {
+    transform: none; } }
 
 .contenedor-main {
   height: 100vh;

@@ -11,9 +11,9 @@
 a,  .hover-footer {
     transition: all 1 ease-in-out; 
 }
-header p:hover, ul li a:hover {
+ header p:hover, ul li a:hover {
     transform: scale(0.8);
-}
+ }
 
 /* Esto modidica nav index y nav "tips Const."*/
 
@@ -22,6 +22,12 @@ header p:hover, ul li a:hover {
 }
 
 .nav-link:hover{
-    color:rgb(189, 214, 190)
+    color:rgb(128, 158, 129)
 
 }
+
+@media only screen and (max-width:576px){
+    header p:hover, ul li a:hover {
+        transform:none;
+    }
+}   
